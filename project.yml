@@ -1,0 +1,61 @@
+---
+settings:
+  name: Ransomware Protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ja-jp,us-en,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: Cloud Manager のすべてのドキュメント
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: ランサムウェア攻撃から保護に関するドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    url: "/whats-new.html"
+  - title: はじめに
+    entries:
+    - title: ランサムウェア防御についてご確認ください
+      url: "/concept-ransomware-protection.html"
+  - title: ランサムウェア対策を活用
+    entries:
+    - title: データに対するサイバーセキュリティの推奨事項を管理します
+      url: "/task-analyze-ransomware-data.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録します
+      url: "/task-support-registration.html"
+    - title: ヘルプを表示します
+      url: "/task-get-help.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: はじめに
+    links:
+    - title: ランサムウェア防御についてご確認ください
+      url: concept-ransomware-protection.html
+    - title: 新機能
+      url: whats-new.html
+  - title: サイバーセキュリティに関する推奨事項を管理します
+    links:
+    - title: 上位のデータリポジトリをデータの感度で表示します
+      url: task-analyze-ransomware-data.html#top-data-repositories-by-data-sensitivity
+    - title: ドメイン管理者グループに追加されているユーザを表示します
+      url: task-analyze-ransomware-data.html#domain-administrator-group-control
+    - title: 開いている権限別にデータを表示します
+      url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
+    - title: 暗号化されたファイル別に一覧表示されるデータ
+      url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+  - title: ブログコミュニティ
+    links:
+    - title: ネットアップコミュニティ
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central のブログです
+      url: https://cloud.netapp.com/blog
+    - title: クラウドに関する Web セミナー
+      url: https://cloud.netapp.com/events
+product-family: {}

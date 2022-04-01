@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: concept-ransomware-protection.html 
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity 
+summary: ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。ランサムウェア防御サービスを使用すると、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価できます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。 
+---
+= ランサムウェア防御についてご確認ください
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。ランサムウェア防御サービスを使用すると、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価できます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
+
+https://cloud.netapp.com/cyberstorage["ランサムウェア対策ソリューションのユースケースをご紹介します"^]。
+
+
+TIP: ランサムウェア対策サービスは現在ベータ版です。
+
+
+
+== の機能
+
+現在、ランサムウェア攻撃からの保護に役立ついくつかの機能が提供されています。今後追加される予定です。現在の機能では、次のような状況
+
+* 作業環境内のボリュームは、定期的な Snapshot コピーを作成して保護されていません。
+* を使用してクラウドへのバックアップを作成することで、作業環境内のボリュームを保護することができません https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^]。
+* 作業環境のデータやデータソースは、ではスキャンされません https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。
+* 作業環境またはデータソースで暗号化ファイルの割合が異常に増加しています。
++
+これは、ランサムウェア攻撃がネットワークで開始されたことを示すインジケータになります。
+
+* 機密データがファイルで検出され、作業環境やデータソースでアクセス権限レベルが高すぎます。
+* ユーザーが Active Directory ドメイン管理者グループに追加されました。
+* クラスタ上の ONTAP ソフトウェアのバージョンは古く、最高の保護機能とセキュリティ機能を提供するために更新する必要があります。
+* ONTAP システムで NAS ファイルシステムの監査が有効になっていません。
++
+CIFS 監査を有効にすると、システム管理者に対して、フォルダの権限の変更、ファイルの読み取りや書き込みの失敗、ファイルの作成、変更、削除などの情報を追跡する監査イベントが生成されます。
+
+* 組み込みのランサムウェア対策機能が ONTAP システムで有効になっていない。
++
+ONTAP ランサムウェア対策機能は、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出して警告します。
+
+
+
+link:task-analyze-ransomware-data.html["潜在的な問題をランサムウェア対策ダッシュボードで確認する方法をご確認ください。"]
+
+Cloud Volumes ONTAP システムを使用している場合、作業環境から直接導入できるランサムウェアの保護機能がいくつか追加されています。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html["ランサムウェアに対する保護を強化する方法をご確認ください"^]。
+
+
+
+== サポートされている作業環境とデータソース
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] ランサムウェア対策サービスを使用するための前提条件です。データセンスをインストールして有効化すると、ランサムウェア防御を使用して、次のような作業環境やデータソースに対するサイバー攻撃に対するデータの復元力を確認できます。
+
+* 作業環境： *
+
+* Cloud Volumes ONTAP （ AWS 、 Azure 、 GCP に導入）
+* オンプレミスの ONTAP クラスタ
+* Azure NetApp Files の特長
+* ONTAP 対応の Amazon FSX
+* Amazon S3
+
+
+* データソース： *
+
+* ネットアップ以外のファイル共有
+* オブジェクトストレージ（ S3 プロトコルを使用）
+* データベース
+* OneDrive アカウント
+* SharePoint アカウント
+
+
+ランサムウェア攻撃からの保護では、グローバルな Active Directory 構成も監視されます https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["これはクラウドデータセンスで設定されています"^]。
+
+
+
+== ランサムウェア防御の仕組み
+
+ランサムウェア対策による防御の概要は次のようになります。
+
+. ランサムウェア防御は、データセンス、 Cloud Backup 、およびその他の Cloud Manager リソースから情報を収集し、ランサムウェア対策保護ダッシュボードにデータを表示します。
+. Ransomware Protection ダッシュボードを使用して、システムの保護状況の概要を収集します。
+. 提供されているレポート作成ツールを使用して、サイバーストレージの保護を強化できます。
+
+
+
+
+== コスト
+
+ベータ版では、ランサムウェア対策サービスに個別のコストはかかりません。

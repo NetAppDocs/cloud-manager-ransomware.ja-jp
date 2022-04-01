@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: task-analyze-ransomware-data.html 
+keywords: personal data, personal information, sensitive, personal sensitive data, governance, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, permissions 
+summary: Ransomware Protection ダッシュボードでは、すべての作業環境とデータソースのサイバー復元力の概要を確認できます。各領域にドリルダウンすると、詳細および考えられる対処方法を確認できます。 
+---
+= データソースに対するサイバーセキュリティの推奨事項を管理します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ransomware Protection ダッシュボードでは、すべての作業環境とデータソースのサイバー復元力の概要を確認できます。各領域にドリルダウンすると、詳細および考えられる対処方法を確認できます。
+
+image:screenshot_ransomware_dashboard.png["ランサムウェア対策保護ダッシュボードのスクリーンショット"]
+
+
+
+== サイバーレジリエンスマップ
+
+レジリエンス・マップは、ダッシュボードのメイン領域です。これにより、すべての作業環境とデータソースを視覚的に表示し、関連するサイバー復元情報を表示できます。
+
+image:screenshot_ransomware_cyber_map.png["ランサムウェア防御ダッシュボードのサイバーレジリエンスマップのスクリーンショット。"]
+
+マップは 3 つの部分で構成されています。
+
+左パネル:: すべてのデータソースについてサービスが監視しているアラートのリストが表示されます。また、環境内でアクティブになっている個々のアラートの数も示します。アラートの種類を 1 つ多く設定することは、そのアラートを先に解決しようとするよい理由になります。
+センターパネル:: すべてのデータソース、サービス、および Active Directory がグラフ形式で表示されます。正常な環境では、緑のインジケータが表示され、アラートがある環境では赤色のインジケータが表示されます。
+右パネル:: 赤のインジケータが表示されているデータソースをクリックすると、そのデータソースのアラートが表示され、アラートを解決するための推奨事項が提示されます。アラートはソートされて、最新のアラートが最初に表示されます。さまざまな推奨事項があるため、別の Cloud Manager サービスを利用して問題 を解決できます。
+
+
+これらは、現在追跡されているアラートおよび推奨される対処方法です。
+
+[cols="33,33,33"]
+|===
+| アラート | 説明 | 修正 
+
+
+| 高いデータ暗号化レートが検出されました | データソースで暗号化ファイルまたは破損ファイルの割合が異常に増加しています。つまり、過去 7 日間の暗号化ファイルの割合が 20% を超えました。たとえば、ファイルの 50% が暗号化されている場合は、この値が 1 日後に 60% に増えてしまうと、このアラートが表示されます。 | リンクをクリックしてを起動します https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html["Data Sense Investigation ページ"^]。ここでは、特定の _ 作業環境 _ および _ カテゴリ（暗号化および破損） _ のフィルタを選択して、すべての暗号化および破損したファイルのリストを表示できます。 
+
+
+| 広範囲の権限を持つ機密データが見つかりました | 機密データがファイルに見つかりました。データソースのアクセス権限レベルが高すぎます。 | リンクをクリックしてを起動します https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html["Data Sense Investigation ページ"^]。ここでは、特定の _ 作業環境 _ 、 _ 感度レベル（機密性の高い個人） _ 、 _ 許可 _ のフィルタを選択して、この問題 を持つファイルのリストを表示できます。 
+
+
+| Cloud Backup を使用してバックアップされていないボリュームがあります | を使用して、作業環境内の一部のボリュームが保護されていません https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^]。 | リンクをクリックして Cloud Backup を起動し、作業環境にバックアップされていないボリュームを特定してから、それらのボリュームでバックアップを有効にするかどうかを決定します。 
+
+
+| データソース内の 1 つ以上のリポジトリ（ボリューム、バケットなど）がデータセンスでスキャンされていません | データソースの一部のデータがを使用してスキャンされていません https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。 | リンクをクリックして Data Sense を起動し、スキャンされていない項目のスキャンとマッピングを有効にします。 
+
+
+| ONTAP システムは強化されていません | ONTAP システムの一部の設定がからの推奨事項に従って設定されていません https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"]。 | リンクをクリックすると、にリダイレクトされます <<Status of ONTAP systems hardening,ONTAP 環境パネルを強化します>> 下の図は、アラートの原因となっている問題 、および問題 の修正方法を調査するためのものです。 
+|===
+
+
+== データの感度が高い上位のデータリポジトリ
+
+_Top Data Repositories by Sensitivity Level_ パネルには、最も機密性の高い項目を含む上位 4 つのデータリポジトリ（作業環境およびデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。
+
+* 機密性のないデータ
+* 個人データ
+* 機密性の高い個人データ
+
+
+image:screenshot_ransomware_sensitivity.png["ランサムウェア防御ダッシュボードのデータ感度チャートのスクリーンショット。"]
+
+各セクションにカーソルを合わせると、各カテゴリの項目の総数を確認できます。
+
+各領域をクリックすると、フィルタリングされた結果が [ データセンス調査 ] ページに表示され、さらに調査できます。
+
+
+
+== ドメイン管理者グループ制御
+
+_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新の 5 人のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["グローバル Active Directory を統合"^] クラウドデータセンスに移行して、このパネルをアクティブにします。
+
+image:screenshot_ransomware_domain_admin.png["ランサムウェア対策保護ダッシュボードにドメイン管理者として追加されたユーザのスクリーンショット"]
+
+デフォルトの管理者グループには、「 Administrators 」、「 Domain Admins 」、「 Enterprise Admins 」、「 Enterprise Key Admins 」、および「 Key Admins 」があります。
+
+
+
+== オープンアクセス権のタイプ別に一覧表示されるデータ
+
+[ アクセス権を開く ] パネルには ' スキャンするすべてのファイルに存在するアクセス権の種類ごとの割合が表示されますこのグラフは Data Sense で提供されており、次の種類の権限が表示されています。
+
+* オープンアクセスがありません
+* 組織に開く（ Open to Organization ）
+* [ パブリック ] に移動します
+* 不明なアクセスです
+
+
+image:screenshot_ransomware_permissions.png["ランサムウェア対策ダッシュボードの暗号化されたファイルチャートのスクリーンショット。"]
+
+各セクションにカーソルを合わせると、各カテゴリのファイルの割合と合計数を確認できます。
+
+各領域をクリックすると、フィルタリングされた結果が [ データセンス調査 ] ページに表示され、さらに調査できます。
+
+
+
+== 暗号化されたファイル別にリストされたデータ
+
+_encrypted Files_panel には ' 暗号化されたファイルの割合が時間の経過に伴う上位 4 つのデータ・ソースが表示されます通常、これらはパスワードで保護されている項目です。過去 7 日間の暗号化率を比較して、 20% を超える増加のデータソースを特定することで、この比較が行われます。この量が増えると、ランサムウェアがすでにシステムに攻撃されている可能性があります。
+
+image:screenshot_ransomware_encrypt_files.png["ランサムウェア対策ダッシュボードの暗号化されたファイルチャートのスクリーンショット。"]
+
+いずれかのデータソースの行をクリックすると、フィルタリングされた結果が [ データ検出の調査 ] ページに表示され、さらに調査できます。
+
+
+
+== ONTAP システムのセキュリティ設定のステータス
+
+_harden your ONTAP environment_panel では、 ONTAP システムの特定の設定のステータスが提供され、に応じた導入の安全性を追跡します https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"] これにより、異常なアクティビティをプロアクティブに検出して警告します。
+
+推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。このパネルは、現在オンプレミスの ONTAP および Cloud Volumes ONTAP システムをサポートしています。
+
+image:screenshot_ransomware_harden_ontap.png["ランサムウェア防御ダッシュボードでの ONTAP 強化のステータスを示すスクリーンショット。"]
+
+追跡される設定は次のとおりです。
+
+[cols="33,33,33"]
+|===
+| 硬化目標（ Hardening Objective ） | 説明 | 修正 
+
+
+| 組み込みのアンチランサムウェア | 組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["ボリュームでアンチランサムウェアを有効にする方法をご確認ください"] System Manager を使用 
+
+
+| ONTAP バージョン | クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、オンプレミスシステムの場合は 1 つまたは 2 つのパッチバージョン、または 1 つのマイナーバージョンがクラスタに対応していることを示し、それ以外の場合は 1 つのメジャーバージョンが背後にあることを示しています。赤のアイコンは、クラスタのパッチのバージョンが 3 つ、マイナーバージョンが 2 つ、オンプレミスシステムの場合は 1 つ、それ以外の場合は 2 つのメジャーバージョンの背後にあることを示します。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["オンプレミスクラスタをアップグレードする最善の方法をご確認ください"] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html["Cloud Volumes ONTAP システム"]。 
+
+
+| Snapshot | データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["オンプレミスクラスタで Snapshot を有効にする方法をご覧ください"] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes["Cloud Volumes ONTAP システムで実行します"]。 
+|===
+Cloud Backup ボタンをクリックしてボリュームのバックアップをアクティブ化するか、 Data Sense ボタンをクリックしてクラスタ上のボリュームをスキャンし、コンプライアンスとガバナンスの準拠状況を調査できます。
+
+
+
+== 重要なビジネスデータに対する権限のステータス
+
+ビジネスクリティカルなデータアクセス権分析パネルには ' ビジネスに不可欠なデータのアクセス権ステータスが表示されますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。
+
+image:screenshot_ransomware_critical_permissions.png["Ransomware Protection ダッシュボードで管理しているデータの権限ステータスのスクリーンショット"]
+
+データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["データセンスを使用してポリシーを作成します"]。
+
+このパネルに最大 2 つのポリシーを追加すると、ポリシーの条件を満たすすべてのデータの権限分析がグラフに表示されます。次の項目の数が表示されます。
+
+* 公開アクセス権–データが公開されているとみなす項目
+* 組織のアクセス許可を開く - データが組織に対してオープンであるとみなす項目
+* オープンアクセス権なし–データがオープンアクセス権を持たないと判断する項目
+* 不明な権限–データが不明な権限とみなす項目
+
+
+グラフの各バーにカーソルを合わせると、各カテゴリの結果の数が表示されます。バーをクリックすると、 [ データセンスの調査 ] ページが表示されます。このページでは、どのアイテムにオープンなアクセス許可があるか、およびファイルのアクセス許可を調整する必要があるかどうかを詳細に調べることができます。
