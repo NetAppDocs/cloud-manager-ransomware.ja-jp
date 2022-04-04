@@ -2,25 +2,13 @@
 <blocks>
   <block id="d759e97ebb04097c8dee30fc845cc996" category="summary">ランサムウェア対策ソリューションの最新情報をご確認ください。</block>
   <block id="ca151642aca499fd94ee2307ea084a75" category="doc">ランサムウェア対策の新機能</block>
-  <block id="08abc76a49b9efe7014212c98d534e6d" category="section-title">2021 年 4 月 5 日</block>
-  <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル。</block>
-  <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください</block>
-  <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP ランサムウェア対策機能</block>
-  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link-macro">詳細については、こちらをご覧ください</block>
-  <block id="d1cc60fc49a33e0ae7d36cae499efb4f" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 <block ref="00ea4aec7331e5df57914a41d75be7a8" category="inline-link-macro-rx"></block>。</block>
-  <block id="76553642514a4b204c12afe14df42e92" category="section-title">Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。</block>
-  <block id="14a55b39be461472bba9909669aa45c0" category="paragraph">この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。</block>
-  <block id="02b53084641511d7c2b0f7b7b494c38a" category="section-title">2022 年 3 月 15 日</block>
   <block id="70ca849e4710f5c98451b61f2b47e5a8" category="section-title">ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル</block>
-  <block id="45c9cbfc62a358ed88da671670148ce0" category="paragraph">新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 <block ref="c07bc80d4be5873f25bb0a279dd82cd2" category="inline-link-macro-rx"></block>。</block>
   <block id="1029db4aa82b2fd39d624a6eda513d6c" category="section-title">[ アクセス許可 ] 領域に OneDrive アカウントと SharePoint アカウントが含まれるようになりました</block>
   <block id="52a3db95e0c303b6251e8f60de3b3f3d" category="paragraph">ランサムウェア対策保護ダッシュボードの [ 開くアクセス許可 ] 領域に、 OneDrive アカウントと SharePoint アカウントでスキャンされるファイルに存在するアクセス許可が表示されるようになりました。</block>
-  <block id="9fe54dabf8677a2dd216b421ca613a20" category="section-title">2022 年 2 月 9 日</block>
   <block id="67ecb98d51fb7fee47f7f4c979becfa6" category="section-title">新たなランサムウェア対策サービス</block>
   <block id="c05006d715a916b10a4f130817c81c90" category="paragraph">新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。</block>
   <block id="7e0c2cf881384db7bfcfb883b67871a5" category="inline-link-macro">この新しいサービスの詳細については、こちらをご覧ください</block>
-  <block id="07af92e755dcb6b8c74060d22fcc7077" category="paragraph"><block ref="12a8d1a9d44e422c8f9c04ab83945381" category="inline-link-macro-rx"></block>。</block>
   <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">ネットアップでは、 Cloud Manager をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link-macro"></block>
@@ -59,10 +47,6 @@
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="inline-link">クラウドデータの意味</block>
   <block id="4c28f84b2cbc9460af1770270316b629" category="cell">データソースの一部のデータがを使用してスキャンされていません<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block> コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。</block>
   <block id="72b16307fd83023f89f6fdbe2d82b1f9" category="cell">リンクをクリックして Data Sense を起動し、スキャンされていない項目のスキャンとマッピングを有効にします。</block>
-  <block id="153c673a2339b7123137c37da8e394e2" category="cell">ONTAP システムは強化されていません</block>
-  <block id="5d585315f6c4c0a5ee1e800e3502dd08" category="cell">ONTAP システムの一部の設定がからの推奨事項に従って設定されていません<block ref="8d8b5d147963c1c0602add46562de9a1" category="inline-link-rx"></block>。</block>
-  <block id="f8aa88150742f7039dc7a7ef56fe7ecc" category="inline-xref">ONTAP 環境パネルを強化します</block>
-  <block id="cfe657a540f747c9ef00f76eed4ccdad" category="cell">リンクをクリックすると、にリダイレクトされます <block ref="e60df9b32c12ff1b69061e150f46f08e" category="inline-xref-macro-rx"></block> 下の図は、アラートの原因となっている問題 、および問題 の修正方法を調査するためのものです。</block>
   <block id="64ea11c681029425167cb44bfc5cba6b" category="section-title">データの感度が高い上位のデータリポジトリ</block>
   <block id="dbf745aed831082f2f3dce55616bd43f" category="paragraph">_Top Data Repositories by Sensitivity Level_ パネルには、最も機密性の高い項目を含む上位 4 つのデータリポジトリ（作業環境およびデータソース）が表示されます。各作業環境の棒グラフは、次のように分割されています。</block>
   <block id="c2587967478c7df25fe839d6f619f443" category="list-text">機密性のないデータ</block>
@@ -74,7 +58,6 @@
   <block id="b2f0cf77e342c8e06d6adc89839b5275" category="paragraph">各領域をクリックすると、フィルタリングされた結果が [ データセンス調査 ] ページに表示され、さらに調査できます。</block>
   <block id="d12e8ee197943c930366883b4e6f7e46" category="section-title">ドメイン管理者グループ制御</block>
   <block id="1484c0ae97e3321c4dc842fb559cbdb5" category="inline-link">グローバル Active Directory を統合</block>
-  <block id="c217d88768fcd834f79ac4314520e2eb" category="paragraph">_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新の 5 人のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です<block ref="8f7d0451e4c868ad6ef341be6b4cd177" category="inline-link-rx"></block> クラウドデータセンスに移行して、このパネルをアクティブにします。</block>
   <block id="32cb01a3a6310bb048c5fccec5ef559a" category="inline-image-macro">ランサムウェア対策保護ダッシュボードにドメイン管理者として追加されたユーザのスクリーンショット</block>
   <block id="47887aad5d32097f5b8e3d8a5be5afb3" category="paragraph"><block ref="47887aad5d32097f5b8e3d8a5be5afb3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46419f697b5cb46833f440abb15226ec" category="paragraph">デフォルトの管理者グループには、「 Administrators 」、「 Domain Admins 」、「 Enterprise Admins 」、「 Enterprise Key Admins 」、および「 Key Admins 」があります。</block>
@@ -91,34 +74,11 @@
   <block id="103f4c38cb312b04a9ff1c216d60872d" category="paragraph">_encrypted Files_panel には ' 暗号化されたファイルの割合が時間の経過に伴う上位 4 つのデータ・ソースが表示されます通常、これらはパスワードで保護されている項目です。過去 7 日間の暗号化率を比較して、 20% を超える増加のデータソースを特定することで、この比較が行われます。この量が増えると、ランサムウェアがすでにシステムに攻撃されている可能性があります。</block>
   <block id="e1def2109874ef9469c6637b40a3ec72" category="paragraph"><block ref="e1def2109874ef9469c6637b40a3ec72" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4c9189dc37433980c8f4fd90332e76e" category="paragraph">いずれかのデータソースの行をクリックすると、フィルタリングされた結果が [ データ検出の調査 ] ページに表示され、さらに調査できます。</block>
-  <block id="ba82eec4834347b5a1b3d627cccfd0a2" category="section-title">ONTAP システムのセキュリティ設定のステータス</block>
-  <block id="2751cb6e210e14ad8dab47ab785137aa" category="paragraph">_harden your ONTAP environment_panel では、 ONTAP システムの特定の設定のステータスが提供され、に応じた導入の安全性を追跡します<block ref="8d8b5d147963c1c0602add46562de9a1" category="inline-link-rx"></block> およびを参照してください<block ref="b420a431c9b06854984942bb210b8527" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
-  <block id="fa89058d8368368a6a04d7b446f0b826" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。このパネルは、現在オンプレミスの ONTAP および Cloud Volumes ONTAP システムをサポートしています。</block>
-  <block id="cf883a9477c6275016bd317d9ac38844" category="inline-image-macro">ランサムウェア防御ダッシュボードでの ONTAP 強化のステータスを示すスクリーンショット。</block>
-  <block id="da0f95ed9d75ac4d5d3b7644ac2fd0b7" category="paragraph"><block ref="da0f95ed9d75ac4d5d3b7644ac2fd0b7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bc6d33a925140a3460ad6681dc5242bc" category="paragraph">追跡される設定は次のとおりです。</block>
-  <block id="e9f0aaae56580f9096af03ba526b177c" category="cell">硬化目標（ Hardening Objective ）</block>
-  <block id="b8da2343c9a9a000ebabc122ea447e9f" category="cell">組み込みのアンチランサムウェア</block>
-  <block id="668049b833f74a4da25e90299e223ec3" category="cell">組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</block>
-  <block id="5548081e3623b5964eda1074b3e71b59" category="inline-link">ボリュームでアンチランサムウェアを有効にする方法をご確認ください</block>
-  <block id="f9afbc61d8c3f1554d8948a8072f7cca" category="cell"><block ref="f7268bd2857519dbfe5ca6442e44c926" category="inline-link-rx"></block> System Manager を使用</block>
-  <block id="e8467e9b509c4924668c01eb7ab2adde" category="cell">ONTAP バージョン</block>
-  <block id="482ee68d7c307f3e7c6cd4490bcd8654" category="cell">クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、オンプレミスシステムの場合は 1 つまたは 2 つのパッチバージョン、または 1 つのマイナーバージョンがクラスタに対応していることを示し、それ以外の場合は 1 つのメジャーバージョンが背後にあることを示しています。赤のアイコンは、クラスタのパッチのバージョンが 3 つ、マイナーバージョンが 2 つ、オンプレミスシステムの場合は 1 つ、それ以外の場合は 2 つのメジャーバージョンの背後にあることを示します。</block>
-  <block id="0798f817dc1443dc9f38ec02333f79aa" category="inline-link">オンプレミスクラスタをアップグレードする最善の方法をご確認ください</block>
-  <block id="bd049a4521e272ef2c19305d5ce4e5e1" category="inline-link">Cloud Volumes ONTAP システム</block>
-  <block id="d79235cc308716db7768d40635a4ea88" category="cell"><block ref="d98b7c42d1930a18c92964de7674f038" category="inline-link-rx"></block> または<block ref="d91596b995f2e2640fd2f126a389525d" category="inline-link-rx"></block>。</block>
-  <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="cell">Snapshot</block>
-  <block id="fa1cc5ad543a3d3532ed24192f00dab0" category="cell">データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</block>
-  <block id="9b7b2159a6726d0ae7dbb67ac30fd7ff" category="inline-link">オンプレミスクラスタで Snapshot を有効にする方法をご覧ください</block>
-  <block id="fed5603b3da12b224d2c5a4744d84db6" category="inline-link">Cloud Volumes ONTAP システムで実行します</block>
-  <block id="4e437ecef37249a2bc5e8df8f1ccb95e" category="cell"><block ref="4168787cb28c6a37b0cf4ca6a0660be4" category="inline-link-rx"></block> または<block ref="d0ea607a6683a2696a3f15ac87428cb8" category="inline-link-rx"></block>。</block>
-  <block id="38f4f1ece97a1d13965a46da96aa9caf" category="paragraph">Cloud Backup ボタンをクリックしてボリュームのバックアップをアクティブ化するか、 Data Sense ボタンをクリックしてクラスタ上のボリュームをスキャンし、コンプライアンスとガバナンスの準拠状況を調査できます。</block>
   <block id="4d18540b8dc5a99209517762449c6ad1" category="section-title">重要なビジネスデータに対する権限のステータス</block>
   <block id="7c10a5ddc22c56c55c4495f5de3c4b58" category="paragraph">ビジネスクリティカルなデータアクセス権分析パネルには ' ビジネスに不可欠なデータのアクセス権ステータスが表示されますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。</block>
   <block id="3c55b43a850b4a36aa1cc1d65a454b37" category="inline-image-macro">Ransomware Protection ダッシュボードで管理しているデータの権限ステータスのスクリーンショット</block>
   <block id="5f06a8506759d69aa6bee6f9a20832c9" category="paragraph"><block ref="5f06a8506759d69aa6bee6f9a20832c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3567ab10a436a237ecb220a3570e73e6" category="inline-link">データセンスを使用してポリシーを作成します</block>
-  <block id="172585300741c8af2f22925a7128e50f" category="paragraph">データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください<block ref="46d26f0f5777f7661fabe75b0948e8d7" category="inline-link-rx"></block>。</block>
   <block id="1bb207ad78d32d19fdc9cefbaf8c218b" category="paragraph">このパネルに最大 2 つのポリシーを追加すると、ポリシーの条件を満たすすべてのデータの権限分析がグラフに表示されます。次の項目の数が表示されます。</block>
   <block id="8ae6bb3a0525cfee738155927a6d3790" category="list-text">公開アクセス権–データが公開されているとみなす項目</block>
   <block id="cf9aeda95b99fbd16f0e8d6a3445d6fa" category="list-text">組織のアクセス許可を開く - データが組織に対してオープンであるとみなす項目</block>
@@ -137,18 +97,12 @@
   <block id="2f7d7abbde3d214eeb937dd5553d1875" category="admonition">ランサムウェア対策サービスは現在ベータ版です。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
   <block id="9c0b12d94b35d04d362f66051612faa0" category="paragraph">現在、ランサムウェア攻撃からの保護に役立ついくつかの機能が提供されています。今後追加される予定です。現在の機能では、次のような状況</block>
-  <block id="bdf71233b9b0efa87a2aca5c0fad260a" category="list-text">作業環境内のボリュームは、定期的な Snapshot コピーを作成して保護されていません。</block>
   <block id="eb7d0298b4be2c1f2642a071e6afc843" category="list-text">を使用してクラウドへのバックアップを作成することで、作業環境内のボリュームを保護することができません<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block>。</block>
   <block id="289085348f74317351108d3d869b6f14" category="list-text">作業環境のデータやデータソースは、ではスキャンされません<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block> コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。</block>
   <block id="bf4b00555794320f943c5414853d8594" category="list-text">作業環境またはデータソースで暗号化ファイルの割合が異常に増加しています。</block>
   <block id="0c33ac606d324594400b19f8dfbd2320" category="paragraph">これは、ランサムウェア攻撃がネットワークで開始されたことを示すインジケータになります。</block>
   <block id="9f9bf12f0d03aa6e52653dd926af3d1a" category="list-text">機密データがファイルで検出され、作業環境やデータソースでアクセス権限レベルが高すぎます。</block>
   <block id="9fac98dd46ced81c05c7b657e31d52a1" category="list-text">ユーザーが Active Directory ドメイン管理者グループに追加されました。</block>
-  <block id="d5eb702421e2cc525e648eeebbdbd258" category="list-text">クラスタ上の ONTAP ソフトウェアのバージョンは古く、最高の保護機能とセキュリティ機能を提供するために更新する必要があります。</block>
-  <block id="51b8087986092c90540ce07ff9731763" category="list-text">ONTAP システムで NAS ファイルシステムの監査が有効になっていません。</block>
-  <block id="1f7c786e95d48949eb75e0f100710129" category="paragraph">CIFS 監査を有効にすると、システム管理者に対して、フォルダの権限の変更、ファイルの読み取りや書き込みの失敗、ファイルの作成、変更、削除などの情報を追跡する監査イベントが生成されます。</block>
-  <block id="8dde611eee96a2ced9961bcba422ef09" category="list-text">組み込みのランサムウェア対策機能が ONTAP システムで有効になっていない。</block>
-  <block id="4944c9c65fff384675d8baccb34860d8" category="paragraph">ONTAP ランサムウェア対策機能は、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="b0d802aefd0aaa8c7b820eb85f1572c6" category="inline-link-macro">潜在的な問題をランサムウェア対策ダッシュボードで確認する方法をご確認ください。</block>
   <block id="5744098ef9fc961c062144a5e4a350e8" category="paragraph"><block ref="5744098ef9fc961c062144a5e4a350e8" category="inline-link-macro-rx"></block></block>
   <block id="67c57c1ee074a0ca2ba70d8e8697fa83" category="inline-link">ランサムウェアに対する保護を強化する方法をご確認ください</block>
@@ -171,8 +125,6 @@
   <block id="baf7c2e288b369e60a7911ccf0d7843f" category="paragraph">ランサムウェア攻撃からの保護では、グローバルな Active Directory 構成も監視されます<block ref="d685621cbb53c0e90fe734b5c28a2dbe" category="inline-link-rx"></block>。</block>
   <block id="589c1e86e266a18dc3983ba51d0a031b" category="section-title">ランサムウェア防御の仕組み</block>
   <block id="7decc1126c0bc1b92923147bff845cde" category="paragraph">ランサムウェア対策による防御の概要は次のようになります。</block>
-  <block id="9ea9d90ba484137a67080a2b97132147" category="list-text">ランサムウェア防御は、データセンス、 Cloud Backup 、およびその他の Cloud Manager リソースから情報を収集し、ランサムウェア対策保護ダッシュボードにデータを表示します。</block>
-  <block id="5063440a7b98026cbfafe1b51817682a" category="list-text">Ransomware Protection ダッシュボードを使用して、システムの保護状況の概要を収集します。</block>
   <block id="ddb1029c89fa39456180abaf191e6b60" category="list-text">提供されているレポート作成ツールを使用して、サイバーストレージの保護を強化できます。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="bff8adc090b2fdcbd02cf502f752a260" category="paragraph">ベータ版では、ランサムウェア対策サービスに個別のコストはかかりません。</block>
@@ -198,4 +150,12 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
+  <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
+  <block id="3c9974394905baea83613dc5243e802d" category="paragraph">新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="bd1d0d25f541ccd6fe3d549035a08045" category="inline-link-rx"></block>。</block>
+  <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
+  <block id="4cbab4d1f9ed3d7e4a072ea1383b05e0" category="paragraph"><block ref="886d7dbada41cb3ce3b667c033fcccd8" category="inline-link-rx"></block>。</block>
+  <block id="206f9d17695d7880b66a22ae30ca1d40" category="paragraph">_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です<block ref="8f7d0451e4c868ad6ef341be6b4cd177" category="inline-link-rx"></block> クラウドデータセンスに移行して、このパネルをアクティブにします。</block>
+  <block id="824301188a8dca76d7a6db3ecc3d5491" category="paragraph">データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください<block ref="ca4155a1a04193934b2931c2b97d49e7" category="inline-link-rx"></block>。</block>
+  <block id="ed47a881805b813c0ec26c370ffa973f" category="list-text">Ransomware Protection は、 Cloud Data Sense 、 Cloud Backup 、およびその他の Cloud Manager リソースから情報を収集し、ランサムウェア防御ダッシュボードにデータを表示します。</block>
+  <block id="4c5eb95a9e7808face08edae00ea13d5" category="list-text">Ransomware Protection ダッシュボードを使用すると、システムの保護状況の概要を確認できます。</block>
 </blocks>

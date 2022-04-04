@@ -17,31 +17,13 @@ summary: ランサムウェア対策ソリューションの最新情報をご�
 
 
 
-== 2021 年 4 月 5 日
-
-
-
-=== ONTAP 環境のセキュリティ強化を追跡する新しいパネル。
-
-新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
-
-推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 link:task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["詳細については、こちらをご覧ください"]。
-
-
-
-=== Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。
-
-この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。
-
-
-
 == 2022 年 3 月 15 日
 
 
 
 === ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル
 
-新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 link:task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
+新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
 
 
 
@@ -59,4 +41,4 @@ summary: ランサムウェア対策ソリューションの最新情報をご�
 
 新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
 
-link:concept-ransomware-protection.html["この新しいサービスの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ransomware-protection.html["この新しいサービスの詳細については、こちらをご覧ください"]。
