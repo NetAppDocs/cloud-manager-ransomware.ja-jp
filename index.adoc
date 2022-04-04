@@ -7,6 +7,7 @@ summary: ランサムウェア防御サービスを使用すると、サイバ�
 ---
 = Ransomware Protection のドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

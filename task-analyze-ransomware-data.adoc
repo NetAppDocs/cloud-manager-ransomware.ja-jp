@@ -6,6 +6,7 @@ summary: Ransomware Protection ダッシュボードでは、すべての作業�
 ---
 = データソースに対するサイバーセキュリティの推奨事項を管理します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
