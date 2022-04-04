@@ -553,7 +553,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-01 18:17:50 +0000">04/01/2022</time>
+    <time datetime="2022-04-04 17:03:28 +0000">04/04/2022</time>
     
   
 
@@ -635,11 +635,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">データソースの一部のデータがを使用してスキャンされていません <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html" target="_blank" rel="noopener">"クラウドデータの意味"</a> コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">リンクをクリックして Data Sense を起動し、スキャンされていない項目のスキャンとマッピングを有効にします。</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP システムは強化されていません</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP システムの一部の設定がからの推奨事項に従って設定されていません <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf">"『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"</a>。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">リンクをクリックすると、にリダイレクトされます <a href="#Status of ONTAP systems hardening">ONTAP 環境パネルを強化します</a> 下の図は、アラートの原因となっている問題 、および問題 の修正方法を調査するためのものです。</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -678,7 +673,7 @@
 <h2 id="ドメイン管理者グループ制御">ドメイン管理者グループ制御</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新の 5 人のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html" target="_blank" rel="noopener">"グローバル Active Directory を統合"</a> クラウドデータセンスに移行して、このパネルをアクティブにします。</p>
+<p>_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html" target="_blank" rel="noopener">"グローバル Active Directory を統合"</a> クラウドデータセンスに移行して、このパネルをアクティブにします。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_ransomware_domain_admin.png" alt="ランサムウェア対策保護ダッシュボードにドメイン管理者として追加されたユーザのスクリーンショット"></span></p>
@@ -736,57 +731,6 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="ontap-システムのセキュリティ設定のステータス">ONTAP システムのセキュリティ設定のステータス</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>_harden your ONTAP environment_panel では、 ONTAP システムの特定の設定のステータスが提供され、に応じた導入の安全性を追跡します <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf">"『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"</a> およびを参照してください <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html">"ONTAP ランサムウェア対策機能"</a> これにより、異常なアクティビティをプロアクティブに検出して警告します。</p>
-</div>
-<div class="paragraph">
-<p>推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。このパネルは、現在オンプレミスの ONTAP および Cloud Volumes ONTAP システムをサポートしています。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_ransomware_harden_ontap.png" alt="ランサムウェア防御ダッシュボードでの ONTAP 強化のステータスを示すスクリーンショット。"></span></p>
-</div>
-<div class="paragraph">
-<p>追跡される設定は次のとおりです。</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">硬化目標（ Hardening Objective ）</th>
-<th class="tableblock halign-left valign-top">説明</th>
-<th class="tableblock halign-left valign-top">修正</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">組み込みのアンチランサムウェア</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure">"ボリュームでアンチランサムウェアを有効にする方法をご確認ください"</a> System Manager を使用</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP バージョン</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、オンプレミスシステムの場合は 1 つまたは 2 つのパッチバージョン、または 1 つのマイナーバージョンがクラスタに対応していることを示し、それ以外の場合は 1 つのメジャーバージョンが背後にあることを示しています。赤のアイコンは、クラスタのパッチのバージョンが 3 つ、マイナーバージョンが 2 つ、オンプレミスシステムの場合は 1 つ、それ以外の場合は 2 つのメジャーバージョンの背後にあることを示します。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html">"オンプレミスクラスタをアップグレードする最善の方法をご確認ください"</a> または <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html">"Cloud Volumes ONTAP システム"</a>。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Snapshot</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html">"オンプレミスクラスタで Snapshot を有効にする方法をご覧ください"</a> または <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes">"Cloud Volumes ONTAP システムで実行します"</a>。</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Cloud Backup ボタンをクリックしてボリュームのバックアップをアクティブ化するか、 Data Sense ボタンをクリックしてクラスタ上のボリュームをスキャンし、コンプライアンスとガバナンスの準拠状況を調査できます。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="重要なビジネスデータに対する権限のステータス">重要なビジネスデータに対する権限のステータス</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -796,7 +740,7 @@
 <p><span class="image"><img src="./media/screenshot_ransomware_critical_permissions.png" alt="Ransomware Protection ダッシュボードで管理しているデータの権限ステータスのスクリーンショット"></span></p>
 </div>
 <div class="paragraph">
-<p>データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies">"データセンスを使用してポリシーを作成します"</a>。</p>
+<p>データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies" target="_blank" rel="noopener">"データセンスを使用してポリシーを作成します"</a>。</p>
 </div>
 <div class="paragraph">
 <p>このパネルに最大 2 つのポリシーを追加すると、ポリシーの条件を満たすすべてのデータの権限分析がグラフに表示されます。次の項目の数が表示されます。</p>
