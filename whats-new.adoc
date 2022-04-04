@@ -23,7 +23,7 @@ summary: ランサムウェア対策ソリューションの最新情報をご�
 
 === ビジネスクリティカルなデータの権限ステータスを追跡する新しいパネル
 
-新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
+新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["詳細については、こちらをご覧ください"]。
 
 
 
@@ -41,4 +41,4 @@ summary: ランサムウェア対策ソリューションの最新情報をご�
 
 新しいランサムウェア防御サービスでは、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価することができます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ransomware-protection.html["この新しいサービスの詳細については、こちらをご覧ください"]。
+https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html["この新しいサービスの詳細については、こちらをご覧ください"]。

@@ -151,11 +151,11 @@
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
-  <block id="3c9974394905baea83613dc5243e802d" category="paragraph">新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="bd1d0d25f541ccd6fe3d549035a08045" category="inline-link-rx"></block>。</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
-  <block id="4cbab4d1f9ed3d7e4a072ea1383b05e0" category="paragraph"><block ref="886d7dbada41cb3ce3b667c033fcccd8" category="inline-link-rx"></block>。</block>
   <block id="206f9d17695d7880b66a22ae30ca1d40" category="paragraph">_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です<block ref="8f7d0451e4c868ad6ef341be6b4cd177" category="inline-link-rx"></block> クラウドデータセンスに移行して、このパネルをアクティブにします。</block>
   <block id="824301188a8dca76d7a6db3ecc3d5491" category="paragraph">データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください<block ref="ca4155a1a04193934b2931c2b97d49e7" category="inline-link-rx"></block>。</block>
   <block id="ed47a881805b813c0ec26c370ffa973f" category="list-text">Ransomware Protection は、 Cloud Data Sense 、 Cloud Backup 、およびその他の Cloud Manager リソースから情報を収集し、ランサムウェア防御ダッシュボードにデータを表示します。</block>
   <block id="4c5eb95a9e7808face08edae00ea13d5" category="list-text">Ransomware Protection ダッシュボードを使用すると、システムの保護状況の概要を確認できます。</block>
+  <block id="5816bf17c72947dceb173c559c3f6009" category="paragraph">新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
+  <block id="f8f0d5b489ad504a83a9a25f8afd6159" category="paragraph"><block ref="64dfcbf1401a338253308f53837a8af7" category="inline-link-rx"></block>。</block>
 </blocks>
