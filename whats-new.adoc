@@ -18,6 +18,24 @@ summary: ランサムウェア対策ソリューションの最新情報をご�
 
 
 
+== 2022年5月11日
+
+
+
+=== ONTAP 環境のセキュリティ強化を追跡する新しいパネル。
+
+新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
+
+推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening["詳細については、こちらをご覧ください"]。
+
+
+
+=== Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。
+
+この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["詳細については、こちらをご覧ください"]。
+
+
+
 == 2022 年 3 月 15 日
 
 

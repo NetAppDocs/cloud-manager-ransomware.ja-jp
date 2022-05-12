@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ransomware-protection.html 
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity 
-summary: ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。ランサムウェア防御サービスを使用すると、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価できます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。 
+summary: ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。ランサムウェア防御サービスを使用すると、サイバーセキュリティに関する関連情報を表示し、組織がサイバー攻撃に対する回復力を評価できます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。 
 ---
 = ランサムウェア防御についてご確認ください
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: ランサムウェア攻撃は、ビジネス時間、リソース、�
 
 
 [role="lead"]
-ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。ランサムウェア防御サービスを使用すると、サイバーセキュリティに関する関連情報を表示し、データがサイバー攻撃に対する復元力を評価できます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
+ランサムウェア攻撃は、ビジネス時間、リソース、評判を低下させる可能性があります。ランサムウェア防御サービスを使用すると、サイバーセキュリティに関する関連情報を表示し、組織がサイバー攻撃に対する回復力を評価できます。また、データのセキュリティを強化するためのアラートと修正措置のリストも記載されています。
 
 https://cloud.netapp.com/cyberstorage["ランサムウェア対策ソリューションのユースケースをご紹介します"^]。
 
@@ -27,14 +27,24 @@ TIP: ランサムウェア対策サービスは現在ベータ版です。
 
 現在、ランサムウェア攻撃からの保護に役立ついくつかの機能が提供されています。今後追加される予定です。現在の機能では、次のような状況
 
+* 作業環境内のボリュームは、定期的な Snapshot コピーを作成して保護されていません。
 * を使用してクラウドへのバックアップを作成することで、作業環境内のボリュームを保護することができません https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^]。
 * 作業環境のデータやデータソースは、ではスキャンされません https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。
++
+この機能はランサムウェア攻撃からの保護の観点でも重要です。重要な（機密性の高い、ビジネスクリティカルな）データがどこにあるかをより詳しく把握できるため、保護対策に集中しているかを確認できます。
+
+* 最も重要なカテゴリのデータは、ランサムウェア攻撃によってリカバリが必要になった場合にバックアップされません。
 * 作業環境またはデータソースで暗号化ファイルの割合が異常に増加しています。
 +
 これは、ランサムウェア攻撃がネットワークで開始されたことを示すインジケータになります。
 
 * 機密データがファイルで検出され、作業環境やデータソースでアクセス権限レベルが高すぎます。
 * ユーザーが Active Directory ドメイン管理者グループに追加されました。
+* クラスタ上の ONTAP ソフトウェアのバージョンは古く、最高の保護機能とセキュリティ機能を提供するために更新する必要があります。
+* 組み込みのランサムウェア対策機能が ONTAP システムで有効になっていない。
++
+ONTAP ランサムウェア対策機能は、ランサムウェア攻撃を示す可能性のある異常なアクティビティをプロアクティブに検出して警告します。
+
 
 
 link:task-analyze-ransomware-data.html["潜在的な問題をランサムウェア対策ダッシュボードで確認する方法をご確認ください。"]
@@ -60,9 +70,10 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 
 * ネットアップ以外のファイル共有
 * オブジェクトストレージ（ S3 プロトコルを使用）
-* データベース
+* データベース（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Serverなど）
 * OneDrive アカウント
 * SharePoint アカウント
+* Googleドライブアカウント
 
 
 ランサムウェア攻撃からの保護では、グローバルな Active Directory 構成も監視されます https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html["これはクラウドデータセンスで設定されています"^]。
@@ -73,7 +84,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 
 ランサムウェア対策による防御の概要は次のようになります。
 
-. Ransomware Protection は、 Cloud Data Sense 、 Cloud Backup 、およびその他の Cloud Manager リソースから情報を収集し、ランサムウェア防御ダッシュボードにデータを表示します。
+. Ransomware Protectionは、ストレージシステム、Cloud Data Sense、Cloud Backup、およびその他のCloud Managerリソースから情報を収集し、ランサムウェア防御ダッシュボードにデータを表示します。
 . Ransomware Protection ダッシュボードを使用すると、システムの保護状況の概要を確認できます。
 . 提供されているレポート作成ツールを使用して、サイバーストレージの保護を強化できます。
 

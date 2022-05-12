@@ -50,6 +50,15 @@ image:screenshot_ransomware_cyber_map.png["ランサムウェア防御ダッシ�
 
 
 | データソース内の 1 つ以上のリポジトリ（ボリューム、バケットなど）がデータセンスでスキャンされていません | データソースの一部のデータがを使用してスキャンされていません https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。 | リンクをクリックして Data Sense を起動し、スキャンされていない項目のスキャンとマッピングを有効にします。 
+
+
+| 組み込みのランサムウェア対策は、ボリュームによってはアクティブにならない場合があります | オンプレミスのONTAP システムにある一部のボリュームにはがありません https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["ネットアップのランサムウェア対策機能"^] 有効。 | リンクをクリックすると、にリダイレクトされます <<Status of ONTAP systems hardening,ONTAP 環境パネルを強化します>> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。 
+
+
+| ONTAP のバージョンが更新されていません | クラスタにインストールされているONTAP ソフトウェアのバージョンが、での推奨事項に従っていません https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^]。 | リンクをクリックすると、にリダイレクトされます <<Status of ONTAP systems hardening,ONTAP 環境パネルを強化します>> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。 
+
+
+| 一部のボリュームに対してSnapshotが設定されていません | 作業環境内の一部のボリュームは、ボリュームSnapshotを作成して保護されていません。 | リンクをクリックすると、にリダイレクトされます <<Status of ONTAP systems hardening,ONTAP 環境パネルを強化します>> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。 
 |===
 
 
@@ -108,15 +117,42 @@ image:screenshot_ransomware_encrypt_files.png["ランサムウェア対策ダッ
 
 
 
+== ONTAP システムのセキュリティ設定のステータス
+
+_harden your ONTAP environment_panel では、 ONTAP システムの特定の設定のステータスが提供され、に応じた導入の安全性を追跡します https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"^] およびを参照してください https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP ランサムウェア対策機能"^] これにより、異常なアクティビティをプロアクティブに検出して警告します。
+
+推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。
+
+このパネルは、現時点で、NetApp ONTAP システム用のオンプレミスONTAP 、Cloud Volumes ONTAP 、Amazon FSXをサポートしています。
+
+image:screenshot_ransomware_harden_ontap.png["ランサムウェア防御ダッシュボードでの ONTAP 強化のステータスを示すスクリーンショット。"]
+
+追跡される設定は次のとおりです。
+
+[cols="33,33,33"]
+|===
+| 硬化目標（ Hardening Objective ） | 説明 | 修正 
+
+
+| ONTAP ランサムウェア対策 | 組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["ボリュームでアンチランサムウェアを有効にする方法をご確認ください"^] System Manager を使用 
+
+
+| ONTAP バージョン | クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、クラスタの更新元がオンプレミスシステムの場合は1つ、2つ、または1つのマイナーバージョンであることを示し、Cloud Volumes ONTAP の場合は1つのメジャーバージョンであることを示しています。赤のアイコンは、クラスタのパッチのバージョンが3つ、マイナーバージョンが2つ、オンプレミスシステムの場合は1つ、Cloud Volumes ONTAP の場合は2つのメジャーバージョンまでであることを示します。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["オンプレミスクラスタをアップグレードする最善の方法をご確認ください"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html["Cloud Volumes ONTAP システム"^]。 
+
+
+| Snapshot | データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["オンプレミスクラスタでボリュームSnapshotを有効にする方法をご覧ください"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes["Cloud Volumes ONTAP システムで実行します"^]。 
+|===
+
+
 == 重要なビジネスデータに対する権限のステータス
 
 ビジネスクリティカルなデータアクセス権分析パネルには ' ビジネスに不可欠なデータのアクセス権ステータスが表示されますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。
 
 image:screenshot_ransomware_critical_permissions.png["Ransomware Protection ダッシュボードで管理しているデータの権限ステータスのスクリーンショット"]
 
-データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["データセンスを使用してポリシーを作成します"^]。
+このパネルには、最初に選択したデフォルトポリシーに基づいたデータが表示されます。しかし、作成した2つの最も重要なデータセンスポリシーを選択して、最も重要なビジネスデータを表示できます。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["データセンスを使用してポリシーを作成します"^]。
 
-このパネルに最大 2 つのポリシーを追加すると、ポリシーの条件を満たすすべてのデータの権限分析がグラフに表示されます。次の項目の数が表示されます。
+このグラフには、ポリシーの条件を満たすすべてのデータの権限分析が表示されます。次の項目の数が表示されます。
 
 * 公開アクセス権–データが公開されているとみなす項目
 * 組織のアクセス許可を開く - データが組織に対してオープンであるとみなす項目
@@ -125,3 +161,19 @@ image:screenshot_ransomware_critical_permissions.png["Ransomware Protection ダ�
 
 
 グラフの各バーにカーソルを合わせると、各カテゴリの結果の数が表示されます。バーをクリックすると、 [ データセンスの調査 ] ページが表示されます。このページでは、どのアイテムにオープンなアクセス許可があるか、およびファイルのアクセス許可を調整する必要があるかどうかを詳細に調べることができます。
+
+
+
+== 重要なビジネスデータのバックアップステータス
+
+_Backup Status_panelには、Cloud Backupを使用して保護されているデータのカテゴリが表示されます。これにより、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法がわかります。このデータは、作業環境内の特定のカテゴリの項目数を視覚的に表したものです。
+
+このパネルに表示されるのは、Cloud Backup_アンド_Scannedを使用してすでにバックアップされているオンプレミスONTAP とCloud Volumes ONTAP の作業環境だけです。
+
+image:screenshot_ransomware_backups.png["Ransomware Protectionダッシュボードで管理しているデータのバックアップステータスのスクリーンショット"]
+
+最初に、このパネルには、選択したデフォルトのカテゴリに基づいたデータが表示されます。ただし、追跡するデータのカテゴリ（コードファイル、契約など）を選択することもできます。詳細については、のリストを参照してください https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["カテゴリ"] これは、作業環境に適したCloud Data Senseで入手できます。次に、最大4つのカテゴリを選択します。
+
+データが入力されたら、グラフの各四角形の上にカーソルを置くと、作業環境内の同じカテゴリにあるすべてのファイルからバックアップされたファイルの数が表示されます。緑色の四角は、ファイルの85%以上がバックアップされていることを示します。黄色の四角は、ファイルの40%～85%がバックアップされていることを意味します。赤色の四角は、バックアップされるファイルが40%以下であることを意味します。
+
+行の末尾にあるCloud Backupボタンをクリックすると、Cloud Backupインターフェイスに移動して、各作業環境のより多くのボリュームでバックアップを有効にできます。
