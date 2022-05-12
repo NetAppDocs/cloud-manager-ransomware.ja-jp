@@ -587,7 +587,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 08:18:47 +0000">04/18/2022</time>
+    <time datetime="2022-05-12 12:58:13 +0000">05/12/2022</time>
     
   
 
@@ -668,6 +668,21 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">データソース内の 1 つ以上のリポジトリ（ボリューム、バケットなど）がデータセンスでスキャンされていません</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">データソースの一部のデータがを使用してスキャンされていません <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html" target="_blank" rel="noopener">"クラウドデータの意味"</a> コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">リンクをクリックして Data Sense を起動し、スキャンされていない項目のスキャンとマッピングを有効にします。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">組み込みのランサムウェア対策は、ボリュームによってはアクティブにならない場合があります</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">オンプレミスのONTAP システムにある一部のボリュームにはがありません <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html" target="_blank" rel="noopener">"ネットアップのランサムウェア対策機能"</a> 有効。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">リンクをクリックすると、にリダイレクトされます <a href="#Status of ONTAP systems hardening">ONTAP 環境パネルを強化します</a> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP のバージョンが更新されていません</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタにインストールされているONTAP ソフトウェアのバージョンが、での推奨事項に従っていません <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">リンクをクリックすると、にリダイレクトされます <a href="#Status of ONTAP systems hardening">ONTAP 環境パネルを強化します</a> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一部のボリュームに対してSnapshotが設定されていません</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">作業環境内の一部のボリュームは、ボリュームSnapshotを作成して保護されていません。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">リンクをクリックすると、にリダイレクトされます <a href="#Status of ONTAP systems hardening">ONTAP 環境パネルを強化します</a> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -765,6 +780,57 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="ontap-システムのセキュリティ設定のステータス">ONTAP システムのセキュリティ設定のステータス</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>_harden your ONTAP environment_panel では、 ONTAP システムの特定の設定のステータスが提供され、に応じた導入の安全性を追跡します <a href="https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf" target="_blank" rel="noopener">"『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください"</a> およびを参照してください <a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html" target="_blank" rel="noopener">"ONTAP ランサムウェア対策機能"</a> これにより、異常なアクティビティをプロアクティブに検出して警告します。</p>
+</div>
+<div class="paragraph">
+<p>推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。</p>
+</div>
+<div class="paragraph">
+<p>このパネルは、現時点で、NetApp ONTAP システム用のオンプレミスONTAP 、Cloud Volumes ONTAP 、Amazon FSXをサポートしています。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_ransomware_harden_ontap.png" alt="ランサムウェア防御ダッシュボードでの ONTAP 強化のステータスを示すスクリーンショット。"></span></p>
+</div>
+<div class="paragraph">
+<p>追跡される設定は次のとおりです。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">硬化目標（ Hardening Objective ）</th>
+<th class="tableblock halign-left valign-top">説明</th>
+<th class="tableblock halign-left valign-top">修正</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP ランサムウェア対策</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure" target="_blank" rel="noopener">"ボリュームでアンチランサムウェアを有効にする方法をご確認ください"</a> System Manager を使用</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ONTAP バージョン</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、クラスタの更新元がオンプレミスシステムの場合は1つ、2つ、または1つのマイナーバージョンであることを示し、Cloud Volumes ONTAP の場合は1つのメジャーバージョンであることを示しています。赤のアイコンは、クラスタのパッチのバージョンが3つ、マイナーバージョンが2つ、オンプレミスシステムの場合は1つ、Cloud Volumes ONTAP の場合は2つのメジャーバージョンまでであることを示します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html" target="_blank" rel="noopener">"オンプレミスクラスタをアップグレードする最善の方法をご確認ください"</a> または <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html" target="_blank" rel="noopener">"Cloud Volumes ONTAP システム"</a>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Snapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html" target="_blank" rel="noopener">"オンプレミスクラスタでボリュームSnapshotを有効にする方法をご覧ください"</a> または <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes" target="_blank" rel="noopener">"Cloud Volumes ONTAP システムで実行します"</a>。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
 <h2 id="重要なビジネスデータに対する権限のステータス">重要なビジネスデータに対する権限のステータス</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -774,10 +840,10 @@
 <p><span class="image"><img src="./media/screenshot_ransomware_critical_permissions.png" alt="Ransomware Protection ダッシュボードで管理しているデータの権限ステータスのスクリーンショット"></span></p>
 </div>
 <div class="paragraph">
-<p>データは、作成したデータセンスポリシーを選択して最も重要なビジネスデータを表示した後にのみ読み込まれるため、このパネルには最初はデータがありません。方法を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies" target="_blank" rel="noopener">"データセンスを使用してポリシーを作成します"</a>。</p>
+<p>このパネルには、最初に選択したデフォルトポリシーに基づいたデータが表示されます。しかし、作成した2つの最も重要なデータセンスポリシーを選択して、最も重要なビジネスデータを表示できます。方法を参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies" target="_blank" rel="noopener">"データセンスを使用してポリシーを作成します"</a>。</p>
 </div>
 <div class="paragraph">
-<p>このパネルに最大 2 つのポリシーを追加すると、ポリシーの条件を満たすすべてのデータの権限分析がグラフに表示されます。次の項目の数が表示されます。</p>
+<p>このグラフには、ポリシーの条件を満たすすべてのデータの権限分析が表示されます。次の項目の数が表示されます。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -797,6 +863,29 @@
 </div>
 <div class="paragraph">
 <p>グラフの各バーにカーソルを合わせると、各カテゴリの結果の数が表示されます。バーをクリックすると、 [ データセンスの調査 ] ページが表示されます。このページでは、どのアイテムにオープンなアクセス許可があるか、およびファイルのアクセス許可を調整する必要があるかどうかを詳細に調べることができます。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="重要なビジネスデータのバックアップステータス">重要なビジネスデータのバックアップステータス</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>_Backup Status_panelには、Cloud Backupを使用して保護されているデータのカテゴリが表示されます。これにより、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法がわかります。このデータは、作業環境内の特定のカテゴリの項目数を視覚的に表したものです。</p>
+</div>
+<div class="paragraph">
+<p>このパネルに表示されるのは、Cloud Backup_アンド_Scannedを使用してすでにバックアップされているオンプレミスONTAP とCloud Volumes ONTAP の作業環境だけです。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_ransomware_backups.png" alt="Ransomware Protectionダッシュボードで管理しているデータのバックアップステータスのスクリーンショット"></span></p>
+</div>
+<div class="paragraph">
+<p>最初に、このパネルには、選択したデフォルトのカテゴリに基づいたデータが表示されます。ただし、追跡するデータのカテゴリ（コードファイル、契約など）を選択することもできます。詳細については、のリストを参照してください <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories">"カテゴリ"</a> これは、作業環境に適したCloud Data Senseで入手できます。次に、最大4つのカテゴリを選択します。</p>
+</div>
+<div class="paragraph">
+<p>データが入力されたら、グラフの各四角形の上にカーソルを置くと、作業環境内の同じカテゴリにあるすべてのファイルからバックアップされたファイルの数が表示されます。緑色の四角は、ファイルの85%以上がバックアップされていることを示します。黄色の四角は、ファイルの40%～85%がバックアップされていることを意味します。赤色の四角は、バックアップされるファイルが40%以下であることを意味します。</p>
+</div>
+<div class="paragraph">
+<p>行の末尾にあるCloud Backupボタンをクリックすると、Cloud Backupインターフェイスに移動して、各作業環境のより多くのボリュームでバックアップを有効にできます。</p>
 </div>
 </div>
 </div>
