@@ -137,10 +137,10 @@ image:screenshot_ransomware_harden_ontap.png["ランサムウェア防御ダッ�
 | ONTAP ランサムウェア対策 | 組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["ボリュームでアンチランサムウェアを有効にする方法をご確認ください"^] System Manager を使用 
 
 
-| ONTAP バージョン | クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、クラスタの更新元がオンプレミスシステムの場合は1つ、2つ、または1つのマイナーバージョンであることを示し、Cloud Volumes ONTAP の場合は1つのメジャーバージョンであることを示しています。赤のアイコンは、クラスタのパッチのバージョンが3つ、マイナーバージョンが2つ、オンプレミスシステムの場合は1つ、Cloud Volumes ONTAP の場合は2つのメジャーバージョンまでであることを示します。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["オンプレミスクラスタをアップグレードする最善の方法をご確認ください"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html["Cloud Volumes ONTAP システム"^]。 
+| ONTAP バージョン | クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、クラスタの更新元がオンプレミスシステムの場合は1つ、2つ、または1つのマイナーバージョンであることを示し、Cloud Volumes ONTAP の場合は1つのメジャーバージョンであることを示しています。赤のアイコンは、クラスタのパッチのバージョンが3つ、マイナーバージョンが2つ、オンプレミスシステムの場合は1つ、Cloud Volumes ONTAP の場合は2つのメジャーバージョンまでであることを示します。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["オンプレミスクラスタをアップグレードする最善の方法をご確認ください"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Volumes ONTAP システム"^]。 
 
 
-| Snapshot | データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["オンプレミスクラスタでボリュームSnapshotを有効にする方法をご覧ください"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes["Cloud Volumes ONTAP システムで実行します"^]。 
+| Snapshot | データボリュームでアクティブ化されている Snapshot 機能であり、ボリュームの何パーセントに Snapshot コピーがあるか。緑のステータスアイコンは、ボリュームの 85% 以上で Snapshot が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["オンプレミスクラスタでボリュームSnapshotを有効にする方法をご覧ください"^]または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html#manage-volumes["Cloud Volumes ONTAP システムで実行します"^]または https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-snapshot-copies["ONTAP システム用のFSX"^]。 
 |===
 
 
