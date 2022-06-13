@@ -91,7 +91,6 @@
   <block id="effbb336e45f46d581aeda0855b4f075" category="paragraph"><block ref="1d0e1a8a3aab3560b76f73789d114aca" category="inline-link-rx"></block>。</block>
   <block id="2f7d7abbde3d214eeb937dd5553d1875" category="admonition">ランサムウェア対策サービスは現在ベータ版です。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
-  <block id="9c0b12d94b35d04d362f66051612faa0" category="paragraph">現在、ランサムウェア攻撃からの保護に役立ついくつかの機能が提供されています。今後追加される予定です。現在の機能では、次のような状況</block>
   <block id="eb7d0298b4be2c1f2642a071e6afc843" category="list-text">を使用してクラウドへのバックアップを作成することで、作業環境内のボリュームを保護することができません<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block>。</block>
   <block id="289085348f74317351108d3d869b6f14" category="list-text">作業環境のデータやデータソースは、ではスキャンされません<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block> コンプライアンスやプライバシーに関する懸念を特定し、最適化の機会を見つける。</block>
   <block id="bf4b00555794320f943c5414853d8594" category="list-text">作業環境またはデータソースで暗号化ファイルの割合が異常に増加しています。</block>
@@ -126,7 +125,6 @@
   <block id="3d6eff6991e5216e6290ee43be3ac04a" category="doc">Ransomware Protection のドキュメント</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
   <block id="8aa5491f5b5232be0b1b2e9832e6ee88" category="sidebar">ランサムウェア攻撃から保護に関するドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
@@ -147,8 +145,6 @@
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="206f9d17695d7880b66a22ae30ca1d40" category="paragraph">_ ドメイン管理者グループのコントロールパネルには、ドメイン管理者グループに追加された最新のユーザーが表示されます。これにより、これらのグループですべてのユーザーを許可するかどうかを確認できます。が必要です<block ref="8f7d0451e4c868ad6ef341be6b4cd177" category="inline-link-rx"></block> クラウドデータセンスに移行して、このパネルをアクティブにします。</block>
   <block id="4c5eb95a9e7808face08edae00ea13d5" category="list-text">Ransomware Protection ダッシュボードを使用すると、システムの保護状況の概要を確認できます。</block>
-  <block id="5816bf17c72947dceb173c559c3f6009" category="paragraph">新しいパネル「ビジネスクリティカルなデータアクセス権分析」には、ビジネスに不可欠なデータのアクセス権ステータスが表示されます。これにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
-  <block id="f8f0d5b489ad504a83a9a25f8afd6159" category="paragraph"><block ref="64dfcbf1401a338253308f53837a8af7" category="inline-link-rx"></block>。</block>
   <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">NSS アカウントを追加します</block>
   <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">サポートダッシュボードを使用すると、すべてのネットアップサポートサイトのアカウントを 1 箇所から追加および管理できます。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
@@ -214,10 +210,8 @@
   <block id="55a52ff3da54b1be61be4ffbf282e94a" category="section-title">ONTAP 環境のセキュリティ強化を追跡する新しいパネル。</block>
   <block id="9c7ce6244ca9eb3215d61dd69afa3325" category="inline-link">『 NetApp Security Hardening Guide for ONTAP Systems 』を参照してください</block>
   <block id="3380ed6ae32f99410860532de07b57a7" category="inline-link">ONTAP ランサムウェア対策機能</block>
-  <block id="c0920e0c17ca7e741f375b33ea0a761b" category="paragraph">新しいパネル「 ONTAP 環境の強化」には、 ONTAP システムの特定の設定のステータスが表示され、に従って導入する際のセキュリティを追跡できます<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
   <block id="914a5a27ea412edf84bb416054ec6d75" category="paragraph">推奨事項を確認し、潜在的な問題への対処方法を決定できます。次の手順に従って、クラスタの設定を変更したり、変更を別の時間に延期したり、推奨された設定を無視したりできます。<block ref="87553c653b94d5529a2080374ec70030" category="inline-link-rx"></block>。</block>
   <block id="76553642514a4b204c12afe14df42e92" category="section-title">Cloud Backup を使用してさまざまなカテゴリのデータを保護する方法については、新しいパネルを参照してください。</block>
-  <block id="c55588bedd5ed04bd522d770a0c3de70" category="paragraph">この新しい「バックアップステータス」パネルでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を紹介します。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
   <block id="5592b65ac68ee08e7e4d72e1db4c8c57" category="cell">組み込みのランサムウェア対策は、ボリュームによってはアクティブにならない場合があります</block>
   <block id="3e4cd8785a12dd4af37c0d4961022f96" category="inline-link">ネットアップのランサムウェア対策機能</block>
   <block id="7aa34ccd4933956082a1db1a1dcb9386" category="cell">オンプレミスのONTAP システムにある一部のボリュームにはがありません<block ref="c430ca7dfd9bb0dbfe1053348a62639f" category="inline-link-rx"></block> 有効。</block>
@@ -261,4 +255,27 @@
   <block id="c520be19d736e28ac258be212caaa6a5" category="cell"><block ref="ebf13e67cf6307ed02967adbb6711cdb" category="inline-link-rx"></block> または<block ref="57f03f2d814ee68f8cab383ca5276240" category="inline-link-rx"></block>。</block>
   <block id="b9de0627ae5b338bc6c5d66e26fd1ebc" category="inline-link">ONTAP システム用のFSX</block>
   <block id="3b87b8dcbc175954773151e5cdbe57d2" category="cell"><block ref="9217c403e6fe97a9a176c63ac6ba2b68" category="inline-link-rx"></block>または<block ref="a83b33f58a6c49ebc8dc0bebb61ff0e7" category="inline-link-rx"></block>または<block ref="655b9f4a8bcbab74e9e21d268c925508" category="inline-link-rx"></block>。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">NASファイルシステムの監査ステータスがONTAP Storage VMに対して追跡されるようになりました</block>
+  <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">作業環境内のストレージVMの40%未満でファイルシステムの監査が有効になっている場合、_Cyber Resilience Map_にアラートが追加されます。ONTAP イベントとNFSイベントを追跡および監査ログに記録していないSVMの正確な数は、_harden your environment_panelで確認できます。そのうえで、SVMで監査を有効にするかどうかを判断できます。</block>
+  <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">ボリュームに組み込みのアンチランサムウェアがアクティブでない場合にアラートが表示されるようになりました</block>
+  <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">この情報は、以前にONTAP 環境パネルを強化する_オンプレミスのONTAP システムについて報告されていました。 しかし、搭載されたアンチランサムウェア機能がボリュームの40%未満でオンになると、ダッシュボードでこの情報を確認できるように、_Cyber Resilience Map_でアラートが報告されるようになりました。</block>
+  <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">ONTAP システムのFSXが、ボリュームスナップショットの有効化のために追跡されるようになりました</block>
+  <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">_harden your ONTAP environments _パネルに、FSX for ONTAP システム上のボリュームのSnapshotコピーのステータスが表示されるようになりました。ボリュームの40%未満がスナップショットによって保護されている場合は、_Cyber Resilience Map_でもアラートが生成されます。</block>
+  <block id="5e5a2d8b7f4ac8723d3873b0ba14916e" category="paragraph">新しいパネル_ ONTAP 環境の強化_導入環境の安全性を追跡するONTAP システムの特定の設定の状態を提供します<block ref="060f8a2b53a60ac49c67caafaf5b129f" category="inline-link-rx"></block> およびを参照してください<block ref="0be7bd5b5f280e211653a4c6e05c11a6" category="inline-link-rx"></block> これにより、異常なアクティビティをプロアクティブに検出して警告します。</block>
+  <block id="ed35eae63358acfc6c38aefc0b7736d0" category="paragraph">このNew_Backup Status_panelでは、ランサムウェア攻撃によってリカバリが必要になった場合に、最も重要なカテゴリのデータを包括的にバックアップする方法を示しています。このデータは、 Cloud Backup によってバックアップされる、環境内の特定のカテゴリの項目数を視覚的に表したものです。<block ref="eddc9c9a841fbf81e5d5b5a19c7e11a3" category="inline-link-rx"></block>。</block>
+  <block id="f0affd41380a1f75f1e8cb0eb63a3746" category="paragraph">新しいパネル_ビジネスクリティカルデータアクセス権分析_ビジネスに不可欠なデータのアクセス権ステータスを表示しますこれにより、ビジネスクリティカルなデータの保護状況を迅速に評価できます。<block ref="20409d23480e4ebcd1abe3eb7cf44ef8" category="inline-link-rx"></block>。</block>
+  <block id="07af92e755dcb6b8c74060d22fcc7077" category="paragraph"><block ref="12a8d1a9d44e422c8f9c04ab83945381" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b7793f2050536702cffe75f1afedd67" category="paragraph">Cloud Manager Ransomware Protection Dashboardを使用して、すべての作業環境とデータソースのサイバー復元力の概要を確認できます。各領域にドリルダウンすると、詳細および考えられる対処方法を確認できます。</block>
+  <block id="c4839802587ac50cbe60ffdc49b98465" category="cell">すべてのSVMでファイル処理の監査が有効になっているわけではありません</block>
+  <block id="112dc676159587048198f85964d6516d" category="cell">作業環境内の一部のStorage VMでファイルシステムの監査が有効になっていません。ファイルに対するユーザのアクションを追跡できるようにすることをお勧めします。</block>
+  <block id="2a616a7e873712e5b6e2b2ace9afd42d" category="cell">リンクをクリックすると、にリダイレクトされます <block ref="e60df9b32c12ff1b69061e150f46f08e" category="inline-xref-macro-rx"></block> 問題 を使用して作業環境にアクセスできます。SVMでNASの監査を有効にする必要があるかどうかを調査できます。</block>
+  <block id="e4a37f02d326b41feca29ff24384dfc1" category="cell">NAS監査</block>
+  <block id="26644e590b6e93e56b7eb402dd7184d7" category="cell">ファイルシステムの監査が有効になっているStorage VMの数。緑のステータスアイコンは、SVMの85%以上でNASファイルシステムの監査が有効になっていることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。</block>
+  <block id="c6310b0082711c2ecff8665c858d4349" category="inline-link">SVMでNASの監査を有効にする方法を参照してください</block>
+  <block id="4f1efe1bb089b60d7f12a798fbc657ac" category="cell"><block ref="5008c18083c6348e863173af351120f7" category="inline-link-rx"></block> CLIを使用する。</block>
+  <block id="d79e9c50c54d2d70bdf5777d13357ae9" category="paragraph">ランサムウェア攻撃からの保護では、さまざまな作業環境やインフラレイヤで データ セキュリティ を一元的に管理、調整し、脅威の発生時に適切に対処することができます。現在、サイバーストレージの保護に役立ついくつかの機能が提供されています。今後追加される予定です。現在の機能では、次のような状況</block>
+  <block id="51b8087986092c90540ce07ff9731763" category="list-text">ONTAP システムで NAS ファイルシステムの監査が有効になっていません。</block>
+  <block id="1f7c786e95d48949eb75e0f100710129" category="paragraph">CIFS 監査を有効にすると、システム管理者に対して、フォルダの権限の変更、ファイルの読み取りや書き込みの失敗、ファイルの作成、変更、削除などの情報を追跡する監査イベントが生成されます。</block>
+  <block id="23d8e653f2d8934c45e811223bcdf92b" category="sidebar">ONTAP システムがランサムウェアからどの程度セキュアに保護されているかをご確認ください</block>
 </blocks>

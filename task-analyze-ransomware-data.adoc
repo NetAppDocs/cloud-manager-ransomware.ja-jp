@@ -14,7 +14,7 @@ summary: Ransomware Protection ダッシュボードでは、すべての作業�
 
 
 [role="lead"]
-Ransomware Protection ダッシュボードでは、すべての作業環境とデータソースのサイバー復元力の概要を確認できます。各領域にドリルダウンすると、詳細および考えられる対処方法を確認できます。
+Cloud Manager Ransomware Protection Dashboardを使用して、すべての作業環境とデータソースのサイバー復元力の概要を確認できます。各領域にドリルダウンすると、詳細および考えられる対処方法を確認できます。
 
 image:screenshot_ransomware_dashboard.png["ランサムウェア対策保護ダッシュボードのスクリーンショット"]
 
@@ -59,6 +59,9 @@ image:screenshot_ransomware_cyber_map.png["ランサムウェア防御ダッシ�
 
 
 | 一部のボリュームに対してSnapshotが設定されていません | 作業環境内の一部のボリュームは、ボリュームSnapshotを作成して保護されていません。 | リンクをクリックすると、にリダイレクトされます <<Status of ONTAP systems hardening,ONTAP 環境パネルを強化します>> 問題 を使用して作業環境にアクセスできます。ここで、問題 の修正方法を調査できます。 
+
+
+| すべてのSVMでファイル処理の監査が有効になっているわけではありません | 作業環境内の一部のStorage VMでファイルシステムの監査が有効になっていません。ファイルに対するユーザのアクションを追跡できるようにすることをお勧めします。 | リンクをクリックすると、にリダイレクトされます <<Status of ONTAP systems hardening,ONTAP 環境パネルを強化します>> 問題 を使用して作業環境にアクセスできます。SVMでNASの監査を有効にする必要があるかどうかを調査できます。 
 |===
 
 
@@ -135,6 +138,9 @@ image:screenshot_ransomware_harden_ontap.png["ランサムウェア防御ダッ�
 
 
 | ONTAP ランサムウェア対策 | 組み込みのアンチランサムウェアがアクティブ化されているボリュームの割合。オンプレミスの ONTAP システムにのみ有効です。緑のステータスアイコンは、ボリュームの 85% 以上が有効であることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure["ボリュームでアンチランサムウェアを有効にする方法をご確認ください"^] System Manager を使用 
+
+
+| NAS監査 | ファイルシステムの監査が有効になっているStorage VMの数。緑のステータスアイコンは、SVMの85%以上でNASファイルシステムの監査が有効になっていることを示しています。黄色は、 40 ～ 85% が有効であることを示します。赤は 40% 未満が有効であることを示します。 | https://docs.netapp.com/us-en/ontap/nas-audit/auditing-events-concept.html["SVMでNASの監査を有効にする方法を参照してください"^] CLIを使用する。 
 
 
 | ONTAP バージョン | クラスタにインストールされている ONTAP ソフトウェアのバージョン。緑のステータスアイコンは、バージョンが最新であることを示します。黄色のアイコンは、クラスタの更新元がオンプレミスシステムの場合は1つ、2つ、または1つのマイナーバージョンであることを示し、Cloud Volumes ONTAP の場合は1つのメジャーバージョンであることを示しています。赤のアイコンは、クラスタのパッチのバージョンが3つ、マイナーバージョンが2つ、オンプレミスシステムの場合は1つ、Cloud Volumes ONTAP の場合は2つのメジャーバージョンまでであることを示します。 | https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html["オンプレミスクラスタをアップグレードする最善の方法をご確認ください"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Volumes ONTAP システム"^]。 

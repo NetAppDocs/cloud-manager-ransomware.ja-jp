@@ -10,8 +10,6 @@ settings:
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
-  - title: Cloud Manager のすべてのドキュメント
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: ランサムウェア攻撃から保護に関するドキュメント
     url: "/index.html"
   - title: リリースノート
@@ -50,6 +48,8 @@ homepage:
       url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
     - title: 暗号化されたファイル別に一覧表示されるデータ
       url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+    - title: ONTAP システムがランサムウェアからどの程度セキュアに保護されているかをご確認ください
+      url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ
@@ -61,3 +61,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation
